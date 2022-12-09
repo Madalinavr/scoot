@@ -95,6 +95,7 @@ p {
 .arrow {
     position: absolute;  
     bottom: 0;
+    right: 327px;
 }
 
 .reverce-arrow {
@@ -154,8 +155,18 @@ left: 375px;
     .reverse-right-column {
         margin-right: auto;
     }
+
+    .arrow-2 {
+        padding-top: 17px;
+        padding-right: 161px;
+    }
+
+    .arrow-3 {
+        top: 73px;
+        left: 375px;
+    }
 }
 
-@media screen and (max-width: 374px ) {
+@media screen and (max-width: 375px ) {
    
 }
