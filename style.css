@@ -3,23 +3,27 @@
 }
 
 body {
-    max-width: 1440px;
+    margin: 0;
 }
 
-
-h2{ 
+h2 { 
     font-family: 'Space Mono', sans-serif;
+    margin-bottom: 0;
     font-weight: 700;
     font-size: 48px;
+    letter-spacing: -2.14286px;
     line-height: 48px;
     color: #495567;
 }
 
 p {
     font-family: 'Lexend Deca', sans-serif;
+    width: 445px;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
+    margin-top: 24px;
+    margin-bottom: 40px;
     color: #939CAA;
 }
 
@@ -42,11 +46,116 @@ p {
     padding: 11px 41px;
 }
 
+.container {
+    margin-top: 180px;
+    margin-bottom: 180px;
+    overflow: hidden;
+}
 
 .section-1 {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.left-column {
+    max-width: 445px;
+    margin-right: 76px;
+}
+
+.right-column  {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-right: -344px;
+}
+
+.reverse-right-column {
+    margin-right: 0;
+    margin-left: -344px;
+}
+
+.picture {
+    width: 445px;
+    margin: 0 64px 0 125px;
+    border-radius: 50%;
+}
+
+.reverse-picture {
+    margin: 0 223px 0 64px;
+}
+
+.round-picture {
+    background-color: #E5ECF4;
+    border-radius: 50%;
+    width: 445px;
+}
+
+.arrow {
+    position: absolute;  
+    bottom: 0;
+}
+
+.reverce-arrow {
+    top: 0;
+}
+
+.arrow-1 {
+    width: 735px;
+}
+
+.arrow-2 {
+    padding-right: 37px;
+}
+
+.arrow-3 {
+top: 78px;
+left: 375px;
+}
+
+.section-2 { 
+    display: flex;
+    flex-direction: row;
+    margin-top: 143px;
+    margin-bottom: 160px;
 }
 
 
+@media screen and (max-width: 768px ) {
+    h2 {
+        margin: 0 58px;
+    }
+    p{
+        margin: 40px 0;
+        width: auto;
+    }
+    .section-1 {
+        flex-direction: column-reverse;
+    }
 
+    .section-2 {
+        margin-top: 128px;
+        margin-bottom: 120px;
+        flex-direction: column;
+    }
+
+    .left-column {
+        max-width: 573px;
+        margin-top: 64px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .mobile-left-column {
+        margin: 64px 98px 0;
+    }
+
+    .reverse-right-column {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 374px ) {
+   
+}
