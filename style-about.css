@@ -123,6 +123,8 @@
 }
 
 
+
+
 @media screen and (max-width: 768px ) {
   /* Cele 3 sectiuni */
   .header {
@@ -172,8 +174,8 @@
   }
 }
 
-
-@media screen and(max-width: 375px) {
+@media screen and (max-width: 375px) {
+  /* Cele 3 sectiuni */
   .header {
     margin: 0 32px;
     font-size: 32px;
@@ -187,7 +189,7 @@
   }
 
   .picture{
-    width: 375px;
+    width: 331px;
   }
 
   .round-picture {
