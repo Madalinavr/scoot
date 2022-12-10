@@ -124,17 +124,17 @@
   z-index: -1;
 }
 /* Cele 3 sectiuni */
-h2 { 
-    font-family: 'Space Mono', sans-serif;
-    margin-bottom: 0;
-    font-weight: 700;
-    font-size: 48px;
-    letter-spacing: -2.14286px;
-    line-height: 48px;
-    color: #495567;
+.header { 
+  font-family: 'Space Mono', sans-serif;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -2.14286px;
+  line-height: 48px;
+  color: #495567;
 }
 
-p {
+.text {
     font-family: 'Lexend Deca', sans-serif;
     width: 445px;
     font-weight: 400;
