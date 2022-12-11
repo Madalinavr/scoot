@@ -186,6 +186,12 @@
   .text {
     font-size: 15px;
     line-height: 25px;
+    margin: 32px;
+  }
+
+  .container-cele3sectiuni {
+    margin-top: 120px;
+    margin-bottom: 120px;
   }
 
   .picture{
@@ -196,12 +202,29 @@
     display: none;
   }
 
-  .reverse-picture {
-    display: none;
-  }
-
   .reverse-round-picture {
     display: none;
   }
 
+  .arrow {
+    left: 0;
+  }
+
+  .arrow-3 {
+    top: 0;
+    left: 130px;
+  }
+
+  .reverse-arrow {
+    left: auto;
+    right: 108px;
+  }
+
+  .mobile-left-column {
+    margin: 0;
+  }
+
+  .reverse-image-wrapper {
+    margin-bottom: 56px;
+  }
 }
