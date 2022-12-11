@@ -105,7 +105,7 @@
   width: calc(100% +130px + 165px);
 }
 
-.reverce-arrow {
+.reverse-arrow {
   top: 0;
   right: 480px;
   left: auto;
@@ -161,12 +161,7 @@
   }
 
   .reverse-arrow {
-    right: 420px;
-  }
-
-  .arrow-2 {
-    padding-top: 17px;
-    padding-right: 161px;
+    right: 415px;
   }
 
   .arrow-3 {
@@ -210,6 +205,11 @@
     left: 0;
   }
 
+  .arrow-2 {
+    top: 0;
+    right: 0;
+  }
+
   .arrow-3 {
     top: 0;
     left: 130px;
@@ -217,7 +217,7 @@
 
   .reverse-arrow {
     left: auto;
-    right: 108px;
+    right: 27px;
   }
 
   .mobile-left-column {
