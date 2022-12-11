@@ -186,15 +186,15 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  padding: 0 165px 0 135px;
-}
-
-.image-wrapper {
-  position: relative;
+  padding: 0 165px 0 180px;
 }
 
 .reverse-right-column {
   padding: 0 229px 0 180px;
+}
+
+.image-wrapper {
+  position: relative;
 }
 
 .picture {
@@ -212,8 +212,8 @@
   width: 445px;
 }
 
-.reverce-round-picture {
-  left: -344px ;
+.reverse-round-picture {
+  left: -344px;
 }
 
 .arrow {
@@ -221,22 +221,14 @@
   bottom: 0;
   left: -130px;
   max-width: 740px;
-  width: calc(100% + 130px +165px);
+  width: calc(100% +130px + 165px);
 }
 
-.reverce-arrow {
+.reverse-arrow {
   top: 0;
   right: 480px;
   left: auto;
 }
-
-/* .arrow-1 {
-  width: 100%;
-} */
-
-/* .arrow-2 {
-  width: 100%;
-} */
 
 .arrow-3 {
   top: 78px;
@@ -251,7 +243,7 @@
 }
 
 
-@media screen and (max-width: 768px ) {
+@media only screen and (max-width: 768px ) {
   /* Media Queries for tablet */
   .hero {
     width: 100vw;
@@ -302,11 +294,7 @@
     margin: 64px 98px 0;
   }
 
-  /* .reverse-right-column {
-    margin-right: auto;
-  } */
-
-  .reverce-arrow {
+  .reverse-arrow {
     right: 420px;
   }
 
@@ -316,5 +304,58 @@
 }
 
 
+@media only screen and (max-width: 377px ) {
+  /* Cele 3 sectiuni */
+  .header {
+    margin: 0 32px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+  }
 
+  .text {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 32px;
+  }
+
+  .container-cele3sectiuni {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  .picture{
+    width: 331px;
+  }
+
+  .round-picture {
+    display: none;
+  }
+
+  .reverse-round-picture {
+    display: none;
+  }
+
+  .arrow {
+    left: 0;
+  }
+
+  .arrow-3 {
+    top: 0;
+    left: 130px;
+  }
+
+  .reverse-arrow {
+    left: auto;
+    right: 108px;
+  }
+
+  .mobile-left-column {
+    margin: 0;
+  }
+
+  .reverse-image-wrapper {
+    margin-bottom: 56px;
+  }
+}
 
