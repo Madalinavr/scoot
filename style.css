@@ -93,16 +93,6 @@ body {
   background-color: rgba(47, 59, 89, 0.75);
   z-index: -1;
 }
-/* Cele 3 sectiuni */
-.header { 
-  font-family: 'Space Mono', sans-serif;
-  margin-bottom: 0;
-  font-weight: 700;
-  font-size: 48px;
-  letter-spacing: -2.14286px;
-  line-height: 48px;
-  color: #495567;
-}
 
 .transbox {
   /* background-image: url("./images/Rectangle.png"); */
@@ -135,6 +125,28 @@ body {
 .hiw-paragraph {
   font-family: "Lexend Deca";
   font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  color: #939CAA;
+}
+
+/* Cele 3 sectiuni */
+.header { 
+  font-family: 'Space Mono', sans-serif;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -2.14286px;
+  line-height: 48px;
+  color: #495567;
+}
+
+.text {
+  font-family: 'Lexend Deca', sans-serif;
+  width: 445px;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
