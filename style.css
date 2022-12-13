@@ -128,20 +128,133 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-}
-.hiw-h5 {
-  font-family: "Space Mono";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: -1.07143px;
-  color: #495567;
-  margin-bottom: 30px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  color: #939CAA;
 }
 
-/* Media Queries for tablet */
-@media only screen and (max-width: 768px) {
+/* Cele 3 sectiuni */
+.header { 
+  font-family: 'Space Mono', sans-serif;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -2.14286px;
+  line-height: 48px;
+  color: #495567;
+}
+
+.text {
+  font-family: 'Lexend Deca', sans-serif;
+  width: 445px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  color: #939CAA;
+}
+
+.button-cele3sectiuni {
+  font-family: 'Space Mono', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  background-color: #FCB72B;
+  padding: 14px 44px;
+  cursor: pointer;
+}
+
+.button-cele3sectiuni:hover {
+  background-color: #FFFFFF;
+  color: #FCB72B;
+  border: 3px solid #FCB72B;
+  padding: 11px 41px;
+}
+
+.container-cele3sectiuni {
+  margin-top: 180px;
+  margin-bottom: 180px;
+  overflow: hidden;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+
+.left-column {
+  max-width: 445px;
+  margin-right: 76px;
+}
+
+.right-column  {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 0 165px 0 180px;
+}
+
+.reverse-right-column {
+  padding: 0 229px 0 180px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.picture {
+  width: 445px;
+  border-radius: 50%;
+}
+
+.round-picture {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: calc(-100% - 64px);
+  background-color: #E5ECF4;
+  border-radius: 50%;
+  width: 445px;
+}
+
+.reverse-round-picture {
+  left: -344px;
+}
+
+.arrow {
+  position: absolute;  
+  bottom: 0;
+  left: -130px;
+  max-width: 740px;
+  width: calc(100% +130px + 165px);
+}
+
+.reverse-arrow {
+  top: 0;
+  right: 480px;
+  left: auto;
+}
+
+.arrow-3 {
+  top: 78px;
+  left: 250px;
+}
+
+.section-2 { 
+  display: flex;
+  flex-direction: row;
+  margin-top: 143px;
+  margin-bottom: 139px;
+}
+
+
+@media only screen and (max-width: 768px ) {
+  /* Media Queries for tablet */
   .hero {
     width: 100vw;
   }
@@ -157,4 +270,102 @@ body {
   .left-side {
     margin: 0 98px;
   }
+/* Cele 3 sectiuni */
+  .header {
+    margin: 0 58px;
+  }
+  .text {
+    margin: 40px 0;
+    width: auto;
+  }
+  .section-1 {
+    flex-direction: column-reverse;
+  }
+
+  .section-2 {
+    margin-top: 128px;
+    margin-bottom: 120px;
+    flex-direction: column;
+  }
+
+  .right-column {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .left-column {
+    max-width: 573px;
+    margin-top: 64px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .mobile-left-column {
+    margin: 64px 98px 0;
+  }
+
+  .reverse-arrow {
+    right: 420px;
+  }
+
+  .arrow-3 {
+    top: 73px;
+  }
 }
+
+
+@media only screen and (max-width: 377px ) {
+  /* Cele 3 sectiuni */
+  .header {
+    margin: 0 32px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+  }
+
+  .text {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 32px;
+  }
+
+  .container-cele3sectiuni {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  .picture{
+    width: 331px;
+  }
+
+  .round-picture {
+    display: none;
+  }
+
+  .reverse-round-picture {
+    display: none;
+  }
+
+  .arrow {
+    left: 0;
+  }
+
+  .arrow-3 {
+    top: 0;
+    left: 130px;
+  }
+
+  .reverse-arrow {
+    left: auto;
+    right: 108px;
+  }
+
+  .mobile-left-column {
+    margin: 0;
+  }
+
+  .reverse-image-wrapper {
+    margin-bottom: 56px;
+  }
+}
+
