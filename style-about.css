@@ -10,8 +10,8 @@
   margin-bottom: 0;
   font-weight: 700;
   font-size: 48px;
-  letter-spacing: -2.14286px;
-  line-height: 48px;
+  letter-spacing: -0.021em;
+  line-height: 1;
   color: #495567;
 }
 
@@ -20,7 +20,7 @@
   width: 445px;
   font-weight: 400;
   font-size: 15px;
-  line-height: 25px;
+  line-height: 1.67;
   margin-top: 24px;
   margin-bottom: 40px;
   color: #939CAA;
@@ -32,16 +32,15 @@
   font-weight: 700;
   text-align: center;
   color: #FFFFFF;
-  border: none;
+  border: 3px solid transparent;
   background-color: #FCB72B;
-  padding: 14px 44px;
   cursor: pointer;
 }
 
 .button-cele3sectiuni:hover {
   background-color: #FFFFFF;
   color: #FCB72B;
-  border: 3px solid #FCB72B;
+  border-color: #FCB72B;
   padding: 11px 41px;
 }
 
