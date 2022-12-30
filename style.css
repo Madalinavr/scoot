@@ -6,12 +6,16 @@
   --container-horizontal-space: 2.1rem; /*31.5px*/
 
   --hero-content-max-width: 33rem /*495px*/;
-  --hero-left-padding: 3.7rem; /*57px*/
+  --hero-left-padding: 2rem; /*30px*/
   --hero-line-height: 1rem;
 
   --hero-left-decoration-spacing: 2.7rem; /*40,5px*/
 
   --total-space-when-is-ok: 86.7rem; /*1300px*/
+  --circle-size: 6.4rem;
+  --line-height: 1rem;
+
+  --page-container-size: 85rem;
 }
 * {
   box-sizing: border-box;
@@ -22,10 +26,15 @@ html {
   font-family: var(--body-typography);
   font-weight: 400;
   overflow-x: hidden;
+  height: 100%;
+  width: 100%;
 }
+
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -36,7 +45,11 @@ h1 {
 p {
   margin: 0;
 }
-
+.page-container {
+  max-width: var(--page-container-size);
+  margin: 0 auto;
+}
+/*SECTIO-HERO*/
 .container {
   max-width: var(--container-width); /*1110*/
   margin: 0 auto;
@@ -121,7 +134,6 @@ p {
 .hero__decoration--touch {
   display: none;
 }
-
 .button {
   text-decoration: none;
   font-family: "Space Mono";
@@ -147,6 +159,92 @@ p {
   border: 3px solid #fcb72b;
 }
 
+/*HOW-IT-WORKS*/
+
+.section-hiw {
+  max-width: var(--page-container-size);
+  margin-top: 10.67rem;
+  padding-left: 11rem;
+}
+
+.container-hiw {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+}
+.container-hiw:before,
+.container-hiw:after {
+  content: "";
+  position: absolute;
+  top: calc(var(--circle-size) / 2 - var(--line-height) / 2);
+  display: block;
+  height: var(--line-height);
+  background-color: #e5ecf4;
+}
+
+.container-hiw:before {
+  left: calc(var(--circle-size) / 2);
+  right: 0;
+  width: calc(100% / 3 * 2 + var(--circle-size) / 2);
+  background-color: #e5ecf4;
+}
+
+.container-hiw:after {
+  right: 100%;
+  width: calc(100vw - var(--page-container-size) / 2 - 8px);
+  background-color: #e5ecf4;
+}
+.hiw-title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.16rem;
+  letter-spacing: -1.07143px;
+  color: #495567;
+  margin-bottom: 2.66rem;
+}
+.hiw-content {
+  font-size: 1rem;
+  line-height: 1.16rem;
+  font-weight: 400;
+  font-family: "Lexend Deca";
+  color: #939caa;
+}
+
+.container-hiw .item {
+  flex: 1;
+  position: relative;
+  padding-top: calc(1 * var(--circle-size) + 2.66rem);
+}
+
+.container-hiw .item:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  background-size: contain;
+}
+
+.item.locate-img:before {
+  background-image: url(./images/icon1.png);
+}
+
+.item.pick-img:before {
+  background-image: url(./images/icon2svg.svg);
+}
+
+.item.ride-img:before {
+  background-image: url(./images/icon3.png);
+}
+
 /* Media Queries for tablet */
 @media only screen and (max-width: 74rem) {
   /*1110px*/
@@ -170,15 +268,105 @@ p {
     background-position-y: top, bottom;
   }
 }
+
+/*Media Queries for smaller tablets*/
+@media only screen and (max-width: 51rem) {
+  /*768px*/
+  .section-hiw {
+    margin-top: 8rem;
+    margin-left: 6.53rem;
+    margin-right: 6.53rem;
+    padding-left: 0;
+  }
+
+  .container-hiw {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2.67rem;
+  }
+
+  .container-hiw .item {
+    padding-top: 0;
+    padding-left: calc(var(--circle-size) + 5.27rem);
+  }
+
+  .container-hiw:before,
+  .container-hiw:after {
+    content: "";
+    position: absolute;
+    left: calc(var(--circle-size) / 2 - var(--line-height) / 2);
+
+    display: block;
+    width: var(--line-height);
+    background-color: #e5ecf4;
+  }
+
+  .container-hiw:before {
+    right: auto;
+    top: -8rem;
+    height: calc(8rem + var(--circle-size) / 2);
+  }
+
+  .container-hiw:after {
+    right: auto;
+    height: calc(
+      (100% - 2 * 2.67rem) / 3 * 2 + 2 * 2.67rem + var(--circle-size) / 2
+    );
+    top: 0;
+    z-index: -1;
+  }
+}
+
 /*Media Queries for Mobile */
-@media only screen and (max-width: 26.6rem) {
-  /*400px*/
+@media only screen and (max-width: 25rem) {
+  /*375px*/
   .hero__decoration--touch {
     background-image: url("./images/linie-zig.png");
     background-position-x: min(calc(100vw - 45rem), -30%), right;
     margin-bottom: 2.3rem;
   }
-  .container {
-    margin-top: 7.66rem;
+
+  .section-hiw {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container-hiw:before,
+  .container-hiw:after {
+    display: none;
+  }
+
+  .container-hiw {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .container-hiw .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 0;
+  }
+
+  .container-hiw .item:before {
+    --circle-size: 3.73rem;
+    position: static;
+  }
+
+  .container-hiw .title {
+    font-size: 1.33rem;
+
+    letter-spacing: -0.892857px;
+  }
+
+  .container-hiw .content {
+    margin-top: 0;
+  }
+
+  .hiw-content {
+    padding: 0 2rem 0 2rem;
   }
 }
